@@ -1,21 +1,43 @@
 import logo from './logo.svg';
 import './App.css';
 
+// React rotating image.
+// <img src={logo} className="App-logo" alt="logo" />
+
 function App() {
   return (
     <div className="App">
+      <title>Jake Myers</title>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Soon to be portfolio of Jake Myers.
+          Portfolio of Jake Myers.
         </p>
+
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.linkedin.com/in/jacob-m-myers"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Connect with me on LinkedIn
+        </a>
+
+        <a
+          className="App-link"
+          href="https://github.com/jacob-myers"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          My Github
+        </a>
+
+        <a
+          className="App-link"
+          href="https://crypto-veil.web.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Veil
         </a>
     
       </header>
