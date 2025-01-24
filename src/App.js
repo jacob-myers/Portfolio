@@ -9,7 +9,7 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Navigate
+  //Navigate
 } from "react-router-dom";
 import Home from "./components/Home/Home";
 
