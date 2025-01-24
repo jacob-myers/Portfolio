@@ -27,8 +27,8 @@
   margin: 0 0 0 0;
   padding: 0;
   list-style: none;
-  background-color: rgb(91, 148, 196);
-  border-bottom: 2px solid rgb(0, 62, 94);
+  background-color: black;
+  border-bottom: 2px solid rgb(231, 231, 231);
 }
 
 #nav li a {
@@ -36,10 +36,33 @@
   padding: 8px 15px;
   text-decoration: none;
   font-weight: bold;
-  color: rgb(0, 62, 94);
-  border-right: 2px solid rgb(0, 62, 94)
+  color: rgb(206, 206, 206);
+  border-right: 2px solid rgb(66, 66, 66)
 }
 
 #nav li {
   float: left
+}
+
+.body {
+  background-color: black;
+}
+
+.img-self {
+  width: 700px;
+  height: auto;
+}
+
+.content-col {
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+
+.text-bold {
+  color: rgb(238, 238, 238)
+}
+
+.text-classic {
+  color: rgb(155, 155, 155)
 }
