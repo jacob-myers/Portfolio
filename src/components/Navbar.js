@@ -18,19 +18,19 @@ class Navbar extends React.Component {
                         </a>
                     </li>
                     <li>
-                        <a href="/">
+                        <a href="/about">
                             <AiOutlineUser size={20} style={{ verticalAlign: "bottom" }} />
                             <span> About</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/">
+                        <a href="/projects">
                             <AiOutlineFundProjectionScreen size={20} style={{ verticalAlign: "bottom" }} />
                             <span> Projects</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/">
+                        <a href="/resume">
                             <CgFileDocument size={20} style={{ verticalAlign: "bottom" }} />
                             <span> Resume</span>
                         </a>
