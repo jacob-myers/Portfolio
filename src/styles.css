@@ -21,6 +21,7 @@
 }
 */
 
+/*
 #nav {
   width: 100%;
   float: left;
@@ -43,9 +44,56 @@
 #nav li {
   float: left
 }
+*/
 
-.body {
-  background-color: black;
+.navbar-nav .nav-link {
+  color: white !important;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+.navbar {
+  font-size: 1.2em;
+  font-weight: 500;
+  background-color: rgb(19, 19, 19);
+  border-bottom: 2px solid white !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.navbar-toggler {
+  position: relative !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  visibility: hidden !important;
+  background-color: transparent !important;
+}
+
+.navbar-toggler span {
+  display: block !important;
+  background-color: #ffffff !important;
+  height: 4px !important;
+  width: 27px !important;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+  transform: rotate(0deg) !important;
+  left: 0 !important;
+  opacity: 1 !important;
+}
+
+.img-logo {
+  height: 40px;
+  width: auto;
+}
+
+.home-body {
+  padding-top: 100px !important;
+  padding-left: 8vw !important;
+  padding-right: 8vw !important;
 }
 
 .img-self {

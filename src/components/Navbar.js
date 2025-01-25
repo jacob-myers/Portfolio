@@ -1,44 +1,82 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
 import {
     AiOutlineHome,
     AiOutlineFundProjectionScreen,
     AiOutlineUser,
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
+import logo from "../Assets/icon.png"
 
-class Navbar extends React.Component {
-    render() {
-        return (
-            <div>
-                <ul id="nav">
-                    <li >
-                        <a href="/">
-                            <AiOutlineHome size={20} style={{ verticalAlign: "bottom" }} /> 
-                            <span> Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/about">
-                            <AiOutlineUser size={20} style={{ verticalAlign: "bottom" }} />
-                            <span> About</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/projects">
-                            <AiOutlineFundProjectionScreen size={20} style={{ verticalAlign: "bottom" }} />
-                            <span> Projects</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/resume">
-                            <CgFileDocument size={20} style={{ verticalAlign: "bottom" }} />
-                            <span> Resume</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        )
+
+function JNavbar() {
+    const [expand, updateExpanded] = useState(false);
+    const [navColor, updateNavbar] = useState(false);
+
+    function scrollHandler() {
+        if (window.scrollY >= 20) {
+        updateNavbar(true);
+        } else {
+        updateNavbar(false);
+        }
     }
+
+    window.addEventListener("scroll", scrollHandler);
+
+    return (
+        <Navbar
+        expanded={expand}
+        fixed="top"
+        expand="md"
+        className={navColor ? "sticky" : "navbar"}
+        >
+            <Container>
+            <Navbar.Brand href="/" className="d-flex">
+                <img src={logo} className="img-logo" alt="brand" />
+            </Navbar.Brand>
+                <Navbar.Toggle
+                    aria-controls="responsive-navbar-nav"
+                    onClick={() => {
+                        updateExpanded(expand ? false : "expanded");
+                    }}
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </Navbar.Toggle>
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="ms-auto" defaultActiveKey="#home">
+                        <Nav.Item>
+                            <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+                                <AiOutlineHome size={20} style={{ verticalAlign: "bottom", marginBottom: "3px" }} /> Home
+                            </Nav.Link>
+                        </Nav.Item>
+
+                        <Nav.Item>
+                            <Nav.Link as={Link} to="/about" onClick={() => updateExpanded(false)}>
+                                <AiOutlineUser size={20} style={{ verticalAlign: "bottom", marginBottom: "3px" }} /> About
+                            </Nav.Link>
+                        </Nav.Item>
+
+                        <Nav.Item>
+                            <Nav.Link as={Link} to="/projects" onClick={() => updateExpanded(false)}>
+                                <AiOutlineFundProjectionScreen size={20} style={{ verticalAlign: "bottom", marginBottom: "3px" }} /> Projects
+                            </Nav.Link>
+                        </Nav.Item>
+
+                        <Nav.Item>
+                            <Nav.Link as={Link} to="/resume" onClick={() => updateExpanded(false)}>
+                                <CgFileDocument size={20} style={{ verticalAlign: "bottom", marginBottom: "3px" }} /> Resume
+                            </Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+    );
 }
 
-export default Navbar
+export default JNavbar
