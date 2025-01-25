@@ -85,20 +85,27 @@
   opacity: 1 !important;
 }
 
-.img-logo {
-  height: 40px;
-  width: auto;
-}
-
 .home-body {
   padding-top: 100px !important;
   padding-left: 8vw !important;
   padding-right: 8vw !important;
 }
 
+
+@media (max-width: 550px) {
+  .img-self {
+    width: 90vw !important;
+  }
+}
+
 .img-self {
   width: 500px;
   height: auto;
+}
+
+.img-logo {
+  height: 40px;
+  width: auto;
 }
 
 .content-col {
