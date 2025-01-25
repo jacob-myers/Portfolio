@@ -49,7 +49,7 @@
 }
 
 .img-self {
-  width: 700px;
+  width: 500px;
   height: auto;
 }
 
@@ -71,7 +71,7 @@
 
 .about-social-links {
   padding: 0;
-  padding-top: 10px;
+  padding-top: 20px;
   margin: 0;
   justify-content: center;
   display: inline-block;

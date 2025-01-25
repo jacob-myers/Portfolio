@@ -9,7 +9,7 @@ import HomeCard from "./HomeCard";
 function Home() {
     return (
         <Container fluid className="body">
-        <Row style={{ display: 'flex', justifyContent: "center", padding: "10px" }}>
+        <Row style={{ display:'flex', justifyContent:"center", padding:"10px", height:"90vh" }}>
           <Col
             className="content-col"
             md={6}
@@ -17,7 +17,7 @@ function Home() {
               justifyContent: "center",
               paddingTop: "30px",
               paddingBottom: "30px",
-              width: "500px"
+              width: "350px"
             }}
           >
             <HomeCard/>
@@ -49,10 +49,10 @@ function Home() {
             className="content-col"
             md={6}
             style={{
-              justifyContent: "left",
+              justifyContent: "center",
               paddingTop: "30px",
               paddingBottom: "50px",
-              width: "700px"
+              width: "500px"
             }}
           >
             <img src={selfImg} alt="art" className="img-self" />
