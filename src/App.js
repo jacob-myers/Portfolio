@@ -22,7 +22,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <title>Jake Myers</title>
         <JNavbar />
 
         <Routes>
