@@ -8,8 +8,8 @@ import HomeCard from "./HomeCard";
 
 function Home() {
     return (
-        <Container fluid className="body">
-        <Row style={{ display:'flex', justifyContent:"center", padding:"10px", height:"90vh" }}>
+        <Container fluid className="home-body">
+        <Row style={{ display:'flex', justifyContent:"center" }}>
           <Col
             className="content-col"
             md={6}
