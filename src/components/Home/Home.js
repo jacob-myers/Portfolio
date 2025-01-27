@@ -8,7 +8,7 @@ import HomeCard from "./HomeCard";
 
 function Home() {
     return (
-        <Container fluid className="home-body">
+        <Container fluid className="page-body">
         <Row style={{ display:'flex', justifyContent:"center" }}>
           <Col
             className="content-col"
