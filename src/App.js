@@ -13,6 +13,7 @@ import {
 } from "react-router-dom";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
 
 // React rotating image.
 // <img src={logo} className="App-logo" alt="logo" />
@@ -28,6 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
+          <Route path="/projects" element={<Projects/>} />
         </Routes>
         
       </div>
