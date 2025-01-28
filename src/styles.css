@@ -46,6 +46,11 @@
 }
 */
 
+html {
+  --reg-text-color: rgb(155, 155, 155);
+  --imp-text-color: rgb(238, 238, 238);
+}
+
 .navbar-nav .nav-link {
   color: white !important;
   padding-right: 1rem !important;
@@ -75,7 +80,7 @@
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #ffffff !important;
+  background-color: white !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -117,11 +122,11 @@
 }
 
 .text-bold {
-  color: rgb(238, 238, 238) !important;
+  color: var(--imp-text-color) !important;
 }
 
 .text-classic {
-  color: rgb(155, 155, 155) !important;
+  color: var(--reg-text-color) !important;
 }
 
 .about-social-links {
@@ -145,7 +150,7 @@
   width: 50px;
   margin-right: 15px;
   margin-left: 15px;
-  background: rgba(255, 255, 255, 0.972) !important;
+  background: white !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
 }
@@ -156,7 +161,7 @@
   min-width: 220px;
   margin: 10px;
   padding: 10px;
-  border: 2px solid rgb(155, 155, 155) !important;
+  border: 2px solid var(--reg-text-color) !important;
   border-radius: 7px !important;
 }
 
