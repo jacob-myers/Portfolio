@@ -185,3 +185,20 @@ html {
   margin-bottom: 20px;
   font-weight: 350;
 }
+
+@media (max-width: 550px) {
+  .img-dragon {
+    width: 90vw !important;
+  }
+}
+
+.img-dragon {
+  width: 500px;
+  height: auto;
+}
+
+@media (max-width: 550px) {
+  .about-quote {
+    width: 90vw !important;
+  }
+}
