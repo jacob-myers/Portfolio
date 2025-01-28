@@ -7,7 +7,7 @@ function AboutCard() {
             <blockquote className="blockquote" style={{ margin:"0", textAlign:"left"}}>
                 <h1 className="project-header text-bold">Who I Am</h1>
                 <p style={{ fontSize:"1.1em" }} className="text-classic">
-                    Hi, I am <span className="text-bold">Jacob Myers </span> 
+                    I'm <span className="text-bold">Jacob Myers </span> 
                     from <span className="text-bold">New Hampshire, USA.</span>
                     <br/> <br/>
                     Professionally I am a software engineer and am always interested in new opportunities for work.
