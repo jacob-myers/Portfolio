@@ -117,11 +117,11 @@
 }
 
 .text-bold {
-  color: rgb(238, 238, 238)
+  color: rgb(238, 238, 238) !important;
 }
 
 .text-classic {
-  color: rgb(155, 155, 155)
+  color: rgb(155, 155, 155) !important;
 }
 
 .about-social-links {
@@ -148,4 +148,36 @@
   background: rgba(255, 255, 255, 0.972) !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
+}
+
+
+/* About Page */
+
+.skill-card {
+  min-width: 220px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid white !important;
+  border-radius: 7px !important;
+}
+
+.skill-title {
+  padding: 0 !important;
+  justify-content: space-between;
+  align-items: center;
+  display: flex !important;
+  flex-direction: row !important;
+  font-size: 1.5em;
+}
+
+.skill-description {
+  margin-top: 10px !important;
+  padding: 0 !important;
+  text-align: right;
+}
+
+.project-header {
+  padding-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 350;
 }

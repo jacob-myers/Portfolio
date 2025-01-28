@@ -12,6 +12,7 @@ import {
   //Navigate
 } from "react-router-dom";
 import Home from "./components/Home/Home";
+import About from "./components/About/About";
 
 // React rotating image.
 // <img src={logo} className="App-logo" alt="logo" />
@@ -26,6 +27,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
         </Routes>
         
       </div>
