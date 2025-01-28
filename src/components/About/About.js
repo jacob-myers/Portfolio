@@ -6,7 +6,7 @@ import Languagestack from "./Languagestack";
 import Toolstack from "./Toolstack";
 import AboutCard from "./AboutCard";
 
-import dragonImg from "../../Assets/DragonBW.png"
+import dragonImg from "../../Assets/DragonBW_sm.png"
 
 function About() {
     return (

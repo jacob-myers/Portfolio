@@ -3,9 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import ProjectCard from "./ProjectCard";
 
-import azamiImg from "../../Assets/azami.png";
-import ianaImg from "../../Assets/iana.png";
-import alibiImg from "../../Assets/alibi.png";
+import azamiImg from "../../Assets/azami_sm.png";
+import ianaImg from "../../Assets/iana_sm.png";
+import alibiImg from "../../Assets/alibi_sm.png";
 
 import veilImg from "../../Assets/Projects/veil.png"
 import thoutsortImg from "../../Assets/Projects/thoughtsort.png"
