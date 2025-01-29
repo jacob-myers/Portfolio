@@ -131,6 +131,12 @@ html {
   width: auto;
 }
 
+@media (max-width: 550px) {
+  .content-col {
+    min-width: 90vw !important;
+  }
+}
+
 .content-col {
   display: flex;
   flex-direction: column;
@@ -217,8 +223,12 @@ html {
 
 @media (max-width: 550px) {
   .about-quote {
-    width: 90vw !important;
+    max-width: 90vw !important;
   }
+}
+
+.about-quote {
+  padding: 0 !important;
 }
 
 /* Projects */
