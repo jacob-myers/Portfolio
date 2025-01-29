@@ -49,6 +49,11 @@
 html {
   --reg-text-color: rgb(155, 155, 155);
   --imp-text-color: rgb(238, 238, 238);
+  --off-black: rgb(19, 19, 19);
+}
+
+.navbar-nav {
+  align-items: center !important;
 }
 
 .navbar-nav .nav-link {
@@ -60,7 +65,7 @@ html {
 .navbar {
   font-size: 1.2em;
   font-weight: 500;
-  background-color: rgb(19, 19, 19);
+  background-color: var(--off-black);
   border-bottom: 2px solid white !important;
   padding-left: 20px !important;
   padding-right: 20px !important;
@@ -90,6 +95,19 @@ html {
   opacity: 1 !important;
 }
 
+.navbar-button {
+  border: 1px solid var(--imp-text-color) !important;
+  background-color: rgba(255, 255, 255, 0.137) !important;
+  color: white !important;
+  padding: 3px !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  margin-right: 1rem !important;
+  margin-left: 1rem !important;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
 .page-body {
   padding-top: 100px !important;
   padding-left: 8vw !important;
@@ -111,6 +129,12 @@ html {
 .img-logo {
   height: 40px;
   width: auto;
+}
+
+@media (max-width: 550px) {
+  .content-col {
+    min-width: 90vw !important;
+  }
 }
 
 .content-col {
@@ -199,8 +223,12 @@ html {
 
 @media (max-width: 550px) {
   .about-quote {
-    width: 90vw !important;
+    max-width: 90vw !important;
   }
+}
+
+.about-quote {
+  padding: 0 !important;
 }
 
 /* Projects */
@@ -211,13 +239,18 @@ html {
   }
 }
 
+.projects-projects-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+}
+
 .project-card {
   /*
   border: 2px solid var(--reg-text-color) !important;
   border-radius: 7px !important;
   */
-  background-color: rgb(19, 19, 19) !important;
-  margin-top: 30px;
+  background-color: var(--off-black) !important;
 }
 
 @media (max-width: 550px) {
@@ -227,7 +260,6 @@ html {
 }
 
 .img-projects-art {
-  margin-bottom: 50px;
   width: 500px;
   height: auto;
 }
@@ -245,4 +277,10 @@ html {
   border: 0 !important;
   background-color: var(--imp-text-color) !important;
   color: black !important;
+}
+
+/* Resume */
+
+.react-pdf__Page__textContent {
+  display: none !important;
 }

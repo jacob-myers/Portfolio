@@ -18,10 +18,13 @@ function Projects() {
             <Container>
                 <Row style={{ display:'flex', justifyContent:"center" }}>
                     <Col
-                        className="projects-projects-col"
+                        className="projects-projects-col justify-content-between"
                         md={6}
                         style={{
-                            width: "500px"
+                            paddingTop: "40px",
+                            paddingBottom: "40px",
+                            width: "500px",
+                            height: "2300px"
                         }}
                     >
                         <ProjectCard 
@@ -52,9 +55,12 @@ function Projects() {
                     </Col>
 
                     <Col
-                        className="content-col"
+                        className="projects-projects-col justify-content-between"
                         style={{
-                            maxWidth: "500px"
+                            paddingTop: "40px",
+                            paddingBottom: "40px",
+                            maxWidth: "500px",
+                            height: "2300px"
                         }}
                     >
                         <img src={azamiImg} alt="art" className="img-projects-art" />

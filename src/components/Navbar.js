@@ -9,7 +9,11 @@ import {
     AiOutlineUser,
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
+import { RiGitBranchFill } from "react-icons/ri";
+import { ImNewTab } from "react-icons/im";
+import { RxOpenInNewWindow } from "react-icons/rx";
 import logo from "../Assets/icon.png"
+import { Button } from "react-bootstrap";
 
 
 function JNavbar() {
@@ -71,6 +75,18 @@ function JNavbar() {
                             <Nav.Link as={Link} to="/resume" onClick={() => updateExpanded(false)}>
                                 <CgFileDocument size={20} style={{ verticalAlign: "bottom", marginBottom: "3px" }} /> Resume
                             </Nav.Link>
+                        </Nav.Item>
+
+                        <Nav.Item>
+                            <Button
+                                className="navbar-button"
+                                href="https://github.com/jacob-myers/Portfolio"
+                                target="_blank"
+                            >
+                                <RiGitBranchFill size={20} style={{ marginBottom:"2px" }} />
+                                <RxOpenInNewWindow size={20} style={{ marginBottom:"2px" }} />
+                                
+                            </Button>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
