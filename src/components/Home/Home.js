@@ -2,9 +2,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import { IoLogoGithub } from "react-icons/io";
 import { TiSocialLinkedin } from "react-icons/ti";
 
-import selfImg from "../../Assets/self.png"
-
 import HomeCard from "./HomeCard";
+
+import selfImg from "../../Assets/self.png"
 
 function Home() {
     return (
