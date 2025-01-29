@@ -196,7 +196,6 @@ html {
 .projects-projects-col {
   display: flex;
   flex-direction: column;
-  justify-content: center !important;
 }
 
 .project-card {
