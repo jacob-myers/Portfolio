@@ -10,7 +10,6 @@ import {
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 import { RiGitBranchFill } from "react-icons/ri";
-import { ImNewTab } from "react-icons/im";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import logo from "../Assets/icon.png"
 import { Button } from "react-bootstrap";
