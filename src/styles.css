@@ -239,13 +239,18 @@ html {
   }
 }
 
+.projects-projects-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+}
+
 .project-card {
   /*
   border: 2px solid var(--reg-text-color) !important;
   border-radius: 7px !important;
   */
   background-color: var(--off-black) !important;
-  margin-top: 30px;
 }
 
 @media (max-width: 550px) {
@@ -255,7 +260,6 @@ html {
 }
 
 .img-projects-art {
-  margin-bottom: 50px;
   width: 500px;
   height: auto;
 }
