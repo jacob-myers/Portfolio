@@ -16,6 +16,7 @@ function Resume() {
     return (
         <Container fluid className="page-body">
             <Col>
+                {/* 
                 <Button
                     className="project-buttons"
                     variant="primary"
@@ -26,13 +27,19 @@ function Resume() {
                     <IoMdDownload />
                     &nbsp;Download Resume
                 </Button>
+                */}
 
-                {/* <iframe title="hi" src={pdf} width="100%" height="500px" /> */}
+                <Container style={{height:"84vh"}}>
+                    <iframe title="hi" src={pdf} width="100%" height="100%" />
+                </Container>
 
+                {/* 
                 <Document file={pdf} className="d-flex justify-content-center">
                     <Page pageNumber={1} scale={1.5} />
-                </Document>
+                </Document> 
+                */}
 
+                {/* 
                 <Button
                     className="project-buttons"
                     variant="primary"
@@ -43,6 +50,7 @@ function Resume() {
                     <IoMdDownload />
                     &nbsp;Download Resume
                 </Button>
+                */}
             </Col>
         </Container>
     );
