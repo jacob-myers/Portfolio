@@ -53,8 +53,8 @@ html {
 .navbar {
   font-size: 1.2em;
   font-weight: 500;
-  background-color: rgba(163, 163, 163, 0.192);
-  backdrop-filter: blur(20px);
+  background-color: rgba(63, 63, 63, 0.575);
+  backdrop-filter: blur(10px);
   border-bottom: 2px solid white !important;
   padding-left: 20px !important;
   padding-right: 20px !important;
