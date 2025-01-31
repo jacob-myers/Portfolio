@@ -56,7 +56,7 @@ html {
   background-color: rgba(63, 63, 63, 0.575);
   backdrop-filter: blur(10px);
   border-bottom: 2px solid white !important;
-  padding-left: 20px !important;
+  padding-left: calc(20px + (100vw - 100%));
   padding-right: 20px !important;
 }
 
