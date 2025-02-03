@@ -8,6 +8,9 @@ import {
     FaReact,
     FaNodeJs
 } from "react-icons/fa";
+import { 
+    SiDotnet
+} from "react-icons/si";
 
 function Skillstack() {
     return (
@@ -39,6 +42,13 @@ function Skillstack() {
                     Node.js
                 </Container>
                 <Container className="skill-description">JavaScript environment</Container>
+            </Col>
+            <Col md={2} className="skill-card text-classic">
+                <Container className="skill-title text-bold">
+                    <SiDotnet size={30}/>
+                    .Net
+                </Container>
+                <Container className="skill-description">Development framework</Container>
             </Col>
         </Row>
     );
