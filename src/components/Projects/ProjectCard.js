@@ -2,7 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
-import { IoLogoGithub, IoMdDownload } from "react-icons/io";
+import { IoLogoGithub } from "react-icons/io";
 import { MdOutlineWeb } from "react-icons/md";
 
 import DownloadDialogButton from "./DownloadDialogButton";
