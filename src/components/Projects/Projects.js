@@ -6,11 +6,13 @@ import ProjectCard from "./ProjectCard";
 import azamiImg from "../../Assets/azami_sm.png";
 import ianaImg from "../../Assets/iana_sm.png";
 import alibiImg from "../../Assets/alibi_sm.png";
+import iana2Img from "../../Assets/ianaPearl_sm.png"
 
 import veilImg from "../../Assets/Projects/veil.png"
 import thoutsortImg from "../../Assets/Projects/thoughtsort.png"
 import mydoImg from "../../Assets/Projects/mydo.png"
 import naposImg from "../../Assets/Projects/napos.png"
+import zenkoImg from "../../Assets/Projects/zenko_word_bank.png"
 
 function Projects() {
     return (
@@ -24,9 +26,16 @@ function Projects() {
                             paddingTop: "40px",
                             paddingBottom: "40px",
                             width: "500px",
-                            height: "2300px"
+                            height: "3000px"
                         }}
                     >
+                        <ProjectCard 
+                            imgPath={zenkoImg}
+                            title="Zenko Word Bank"
+                            description="Translation and education tool for native English speakers learning Japanese. User can save a bank of words/terms and search it. Has a complex word/term translator built using data from JMDict."
+                            ghLink="https://github.com/jacob-myers/ZenkoWordBank"
+                            mobileDownloadLink="https://github.com/jacob-myers/ZenkoWordBank/releases/latest/download/zenko-word-bank.apk"
+                        />
                         <ProjectCard 
                             imgPath={veilImg}
                             title="Veil"
@@ -60,11 +69,12 @@ function Projects() {
                             paddingTop: "40px",
                             paddingBottom: "40px",
                             maxWidth: "500px",
-                            height: "2300px"
+                            height: "3000px"
                         }}
                     >
                         <img src={azamiImg} alt="art" className="img-projects-art" />
                         <img src={ianaImg} alt="art" className="img-projects-art" />
+                        <img src={iana2Img} alt="art" className="img-projects-art" />
                         <img src={alibiImg} alt="art" className="img-projects-art" />
                     </Col>
                 </Row>

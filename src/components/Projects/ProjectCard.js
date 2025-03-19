@@ -2,8 +2,10 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
-import { IoLogoGithub } from "react-icons/io";
+import { IoLogoGithub, IoMdDownload } from "react-icons/io";
 import { MdOutlineWeb } from "react-icons/md";
+
+import DownloadDialogButton from "./DownloadDialogButton";
 
 function ProjectCard(props) {
     return (
@@ -19,6 +21,11 @@ function ProjectCard(props) {
                     <Button href={props.demoLink} target="_blank" style={{marginLeft: "10px"}} className="project-buttons">
                         <MdOutlineWeb size={20} style={{marginBottom: "3px"}}/>&nbsp;Demo
                     </Button>
+                }
+                {!props.mobileDownloadLink? null :
+                    <DownloadDialogButton
+                        downloadLink={props.mobileDownloadLink}
+                    />
                 }
             </Card.Body>
         </Card>
