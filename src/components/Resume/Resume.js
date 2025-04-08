@@ -3,7 +3,7 @@ import { Container, Col, Button } from "react-bootstrap";
 
 import { IoMdDownload } from "react-icons/io";
 
-import pdf from "../../Assets/Resume-Jacob_Myers_4.pdf";
+import pdf from "../../Assets/Resume_Jacob_Myers.pdf";
 
 function Resume() {
     return (
