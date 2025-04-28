@@ -6,7 +6,8 @@ import {
     SiAndroidstudio,
     SiOracle,
     SiCloudflare,
-    SiKrita
+    SiKrita,
+    SiDavinciresolve 
 } from "react-icons/si";
 import { 
     IoLogoFirebase
@@ -93,14 +94,21 @@ function Toolstack() {
                     <SiKrita size={30}/>
                     Krita
                 </Container>
-                <Container className="skill-description">Digital painting program</Container>
+                <Container className="skill-description">Digital painting software</Container>
             </Col>
             <Col md={2} className="skill-card text-classic">
                 <Container className="skill-title text-bold">
                     <LuPaperclip size={30}/>
                     Clip Studio
                 </Container>
-                <Container className="skill-description">Digital painting program</Container>
+                <Container className="skill-description">Digital painting software</Container>
+            </Col>
+            <Col md={2} className="skill-card text-classic">
+                <Container className="skill-title text-bold">
+                    <SiDavinciresolve size={30}/>
+                    DaVinci Resolve
+                </Container>
+                <Container className="skill-description">Video editing software</Container>
             </Col>
         </Row>
     );
