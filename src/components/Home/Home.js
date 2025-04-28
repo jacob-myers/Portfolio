@@ -8,15 +8,15 @@ import selfImg from "../../Assets/self.png"
 
 function Home() {
     return (
-        <Container fluid className="page-body">
-        <Row style={{ display:'flex', justifyContent:"center" }}>
+        <Container fluid className="page-body home-body">
+        <Row style={{ display:'flex', justifyContent:"center", marginTop:"50px" }}>
           <Col
             className="content-col"
             md={6}
             style={{
               justifyContent: "center",
-              paddingTop: "30px",
-              paddingBottom: "30px",
+              paddingTop: "00px",
+              paddingBottom: "00px",
               width: "350px"
             }}
           >

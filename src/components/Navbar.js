@@ -33,13 +33,13 @@ function JNavbar() {
         <Navbar
         expanded={expand}
         fixed="top"
-        expand="md"
+        expand="md" // change to lg to make it only expand at larger width.
         className={navColor ? "sticky" : "navbar"}
         >
             <Container>
-            <Navbar.Brand href="/" className="d-flex">
-                <img src={logo} className="img-logo" alt="brand" />
-            </Navbar.Brand>
+                <Navbar.Brand href="/" className="d-flex">
+                    <img src={logo} className="img-logo" alt="brand" />
+                </Navbar.Brand>
                 <Navbar.Toggle
                     aria-controls="responsive-navbar-nav"
                     onClick={() => {
