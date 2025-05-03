@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
@@ -11,8 +12,9 @@ import {
 import { CgFileDocument } from "react-icons/cg";
 import { RiGitBranchFill } from "react-icons/ri";
 import { RxOpenInNewWindow } from "react-icons/rx";
-import logo from "../Assets/icon.png"
 import { Button } from "react-bootstrap";
+
+import logo from "../assets/icon.png"
 
 
 function JNavbar() {
@@ -33,7 +35,7 @@ function JNavbar() {
         <Navbar
         expanded={expand}
         fixed="top"
-        expand="md" // change to lg to make it only expand at larger width.
+        expand="md"
         className={navColor ? "sticky" : "navbar"}
         >
             <Container>
@@ -43,7 +45,7 @@ function JNavbar() {
                 <Navbar.Toggle
                     aria-controls="responsive-navbar-nav"
                     onClick={() => {
-                        updateExpanded(expand ? false : "expanded");
+                        updateExpanded(!expand);
                     }}
                 >
                     <span></span>

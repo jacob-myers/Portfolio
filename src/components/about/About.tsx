@@ -1,9 +1,8 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-import Skillstack from "./Skillstack";
-import Languagestack from "./Languagestack";
-import Toolstack from "./Toolstack";
+import Skillstack from "./SkillStack";
+import Languagestack from "./LanguageStack";
+import Toolstack from "./ToolStack";
 import AboutCard from "./AboutCard";
 
 import dragonImg from "../../Assets/DragonBW_sm.png"

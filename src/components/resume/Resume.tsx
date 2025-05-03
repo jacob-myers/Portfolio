@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Col, Button } from "react-bootstrap";
 
 import { IoMdDownload } from "react-icons/io";

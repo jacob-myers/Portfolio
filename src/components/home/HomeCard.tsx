@@ -1,5 +1,3 @@
-import React from "react";
-
 function HomeCard() {
     return (
         <blockquote className="blockquote home" style={{ margin:"0" }}>

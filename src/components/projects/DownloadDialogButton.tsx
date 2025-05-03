@@ -4,16 +4,15 @@ import { Dialog, DialogTitle, DialogContent } from "@mui/material";
 import QRCode from "react-qr-code";
 
 import { IoMdDownload } from "react-icons/io";
-import PropTypes from 'prop-types';
 
 
-DownloadDialog.propTypes = {
-    open: PropTypes.bool.isRequired,
-    onClose: PropTypes.func.isRequired,
-    downloadLink: PropTypes.string.isRequired
+interface DownloadDialogProps {
+    open: boolean;
+    onClose: (value: boolean) => void;
+    downloadLink: string;
 }
 
-function DownloadDialog(props) {
+function DownloadDialog(props: DownloadDialogProps) {
     const { open, onClose, downloadLink } = props;
 
   return (
@@ -48,14 +47,14 @@ function DownloadDialog(props) {
   );
 }
 
-DownloadDialogButton.propTypes = {
-    downloadLink: PropTypes.string.isRequired
+interface DownloadDialogButtonProps {
+    downloadLink: string;
 }
 
-function DownloadDialogButton(props) {
+function DownloadDialogButton(props: DownloadDialogButtonProps) {
     const [open, setOpen] = useState(false);
 
-    const handleClose = (value) => {
+    const handleClose = () => {
         setOpen(false);
     }
 
@@ -72,5 +71,6 @@ function DownloadDialogButton(props) {
         </>
     )
 }
+
 
 export default DownloadDialogButton;
