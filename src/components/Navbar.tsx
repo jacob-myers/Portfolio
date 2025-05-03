@@ -14,7 +14,7 @@ import { RiGitBranchFill } from "react-icons/ri";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import { Button } from "react-bootstrap";
 
-import logo from "/src/assets/icon.png"
+import logo from "../assets/icon.png"
 
 
 function JNavbar() {
