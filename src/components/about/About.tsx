@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
+import GitHubCalendar from "react-github-calendar";
 
 import Skillstack from "./SkillStack";
 import Languagestack from "./LanguageStack";
@@ -6,7 +7,6 @@ import Toolstack from "./ToolStack";
 import AboutCard from "./AboutCard";
 
 import dragonImg from "../../Assets/DragonBW_sm.png"
-import GitHubCalendar from "react-github-calendar";
 
 function About() {
     return (
@@ -45,7 +45,6 @@ function About() {
                 <h1 className="project-header text-classic">Tools</h1>
                 <Toolstack />
                 
-
                 <Row
                     style={{justifyContent:"center", paddingTop:"30px", paddingBottom:"30px"}}
                 >
@@ -62,9 +61,6 @@ function About() {
                     />
                 </Row>
                 <Container style={{height:"80px"}} />
-
-                
-                
             </Container>
         </Container>
     );
