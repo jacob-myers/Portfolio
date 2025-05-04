@@ -228,6 +228,10 @@ html {
   padding: 0 !important;
 }
 
+.react-activity-calendar {
+  color: var(--imp-text-color) !important;
+}
+
 /* Projects */
 
 @media (max-width: 550px) {

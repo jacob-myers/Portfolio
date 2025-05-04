@@ -6,6 +6,7 @@ import Toolstack from "./ToolStack";
 import AboutCard from "./AboutCard";
 
 import dragonImg from "../../Assets/DragonBW_sm.png"
+import GitHubCalendar from "react-github-calendar";
 
 function About() {
     return (
@@ -43,7 +44,27 @@ function About() {
                 <Skillstack />
                 <h1 className="project-header text-classic">Tools</h1>
                 <Toolstack />
+                
+
+                <Row
+                    style={{justifyContent:"center", paddingTop:"30px", paddingBottom:"30px"}}
+                >
+                    <h1 className="project-header text-classic">Contributions</h1>
+                    <GitHubCalendar 
+                        blockSize={14}
+                        blockMargin={4}
+                        fontSize={16}
+                        username="jacob-myers"
+                        colorScheme="dark"
+                        theme={{
+                            dark: ["#191818", "#5E5E5F", "#999998", "#D1D0D1", "#ffffff"],
+                        }}
+                    />
+                </Row>
                 <Container style={{height:"80px"}} />
+
+                
+                
             </Container>
         </Container>
     );
