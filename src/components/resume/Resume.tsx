@@ -1,38 +1,61 @@
-import { Container, Col, Button } from "react-bootstrap";
+import React from "react";
+import { Container, Col, Row, Button } from "react-bootstrap";
+import ToggleButton from '@mui/material/ToggleButton';
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 
 import { IoMdDownload } from "react-icons/io";
 
-import display_pdf from "../../Assets/Resume_Jacob_Myers_Display.pdf";
-import print_pdf from "../../Assets/Resume_Jacob_Myers_Print.pdf";
+import dark_pdf from "../../Assets/Resume_Jacob_Myers_Display.pdf";
+import light_pdf from "../../Assets/Resume_Jacob_Myers_Print.pdf";
 
 function Resume() {
+
+    const [alignment, setAlignment] = React.useState('dark');
+
+    const handleChange = (
+        event: React.MouseEvent<HTMLElement>,
+        newAlignment: string,
+    ) => {
+        setAlignment(newAlignment);
+    };
+
     return (
         <Container fluid className="page-body" style={{ height:"100vh" }}>
             <Col style={{height:"85%"}}>
-                <Button
-                    className="project-buttons"
-                    variant="primary"
-                    href={display_pdf}
-                    target="_blank"
-                    style={{ maxWidth: "200px", marginBottom:"20px", marginRight:"20px" }}
+                <Row
+                    style={{ justifyContent:"center", marginBottom:"20px"}}
                 >
-                    <IoMdDownload size={18} />
-                    &nbsp;Download Resume
-                </Button>
+                    <Button
+                        className="project-buttons"
+                        variant="primary"
+                        href={alignment === 'dark' ? dark_pdf : light_pdf}
+                        target="_blank"
+                        style={{ maxWidth: "200px",  marginRight:"20px" }}
+                    >
+                        <IoMdDownload size={18} />
+                        &nbsp;Download Resume
+                    </Button>
 
-                <Button
-                    className="project-buttons"
-                    variant="primary"
-                    href={print_pdf}
-                    target="_blank"
-                    style={{ maxWidth: "200px", marginBottom:"20px" }}
-                >
-                    <IoMdDownload size={18} />
-                    &nbsp;Download For Print
-                </Button>
+                    <ToggleButtonGroup
+                        className="custom-toggle-group"
+                        value={alignment}
+                        exclusive
+                        onChange={handleChange}
+                        aria-label="Resume Picker"
+                        style={{ }}
+                    >
+                        <ToggleButton className='custom-toggle' value='light'>Light</ToggleButton>
+                        <ToggleButton className='custom-toggle' value='dark'>Dark</ToggleButton>
+                    </ToggleButtonGroup>
+                </Row>
                 
                 <Container style={{height:"100%"}}>
-                    <iframe title="resume" src={display_pdf} width="100%" height="100%" />
+                    <iframe 
+                        title="resume" 
+                        src={alignment === 'dark' ? dark_pdf : light_pdf} 
+                        width="100%" 
+                        height="100%" 
+                    />
                 </Container>
             </Col>
         </Container>

@@ -285,3 +285,26 @@ html {
   display: none !important;
 }
 
+.custom-toggle-group {
+  display: inline !important;
+  width: auto !important;
+  padding: 0 !important;
+}
+
+.custom-toggle {
+  border: 1px solid #ffffff !important;
+  font-weight: 550 !important;
+  color: #ffffff !important;
+  padding: 6px 16px !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.custom-toggle.Mui-selected {
+  background-color: #ffffff !important;
+  color: var(--off-black) !important;
+}
+
+.custom-toggle:hover {
+  background-color: #d6d6d6 !important;
+}
+
