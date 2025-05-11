@@ -5,8 +5,8 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 
 import { IoMdDownload } from "react-icons/io";
 
-import dark_pdf from "../../Assets/Resume_Jacob_Myers_Display.pdf";
-import light_pdf from "../../Assets/Resume_Jacob_Myers_Print.pdf";
+import dark_pdf from "../../Assets/Resume_Jacob_Myers_Dark.pdf";
+import light_pdf from "../../Assets/Resume_Jacob_Myers_Light.pdf";
 
 function Resume() {
 
