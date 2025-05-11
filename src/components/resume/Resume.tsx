@@ -13,7 +13,7 @@ function Resume() {
     const [alignment, setAlignment] = React.useState('dark');
 
     const handleChange = (
-        event: React.MouseEvent<HTMLElement>,
+        _: React.MouseEvent<HTMLElement>,
         newAlignment: string,
     ) => {
         setAlignment(newAlignment);
