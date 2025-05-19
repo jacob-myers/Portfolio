@@ -11,6 +11,9 @@ const darkResumeID = "1jlC_nTHWrdWSkoKlJje1d0EQsMCjIie-SyBsSj6RQPc";
 const lightResumeLink = `https://docs.google.com/viewer?url=https://docs.google.com/document/d/${lightResumeID}/export?format=pdf&embedded=true`;
 const darkResumeLink = `https://docs.google.com/viewer?url=https://docs.google.com/document/d/${darkResumeID}/export?format=pdf&embedded=true`;
 
+const lightResumeDownloadLink = `https://docs.google.com/document/d/${lightResumeID}/export?format=pdf`;
+const darkResumeDownloadLink = `https://docs.google.com/document/d/${darkResumeID}/export?format=pdf`;
+
 function Resume() {
 
     const [alignment, setAlignment] = React.useState('dark');
@@ -31,8 +34,8 @@ function Resume() {
                     <Button
                         className="project-buttons"
                         variant="primary"
-                        href={alignment === 'dark' ? darkResumeLink : lightResumeLink}
-                        target="_blank"
+                        href={alignment === 'dark' ? darkResumeDownloadLink : lightResumeDownloadLink}
+                        //target="_blank"
                         style={{ maxWidth: "200px",  marginRight:"20px" }}
                     >
                         <IoMdDownload size={18} />
