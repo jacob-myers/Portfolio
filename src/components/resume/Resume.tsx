@@ -5,8 +5,14 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 
 import { IoMdDownload } from "react-icons/io";
 
-import dark_pdf from "../../Assets/Resume_Jacob_Myers_Dark.pdf";
-import light_pdf from "../../Assets/Resume_Jacob_Myers_Light.pdf";
+//import dark_pdf from "../../Assets/Resume_Jacob_Myers_Dark.pdf";
+//import light_pdf from "../../Assets/Resume_Jacob_Myers_Light.pdf";
+
+const lightResumeID = "15Nrs313t6oKPGaPp0fKlRh37vjZtf4ue8ntYHueSJNM";
+const darkResumeID = "1jlC_nTHWrdWSkoKlJje1d0EQsMCjIie-SyBsSj6RQPc";
+
+const lightResumeLink = `https://docs.google.com/viewer?url=https://docs.google.com/document/d/${lightResumeID}/export?format=pdf&embedded=true`;
+const darkResumeLink = `https://docs.google.com/viewer?url=https://docs.google.com/document/d/${darkResumeID}/export?format=pdf&embedded=true`;
 
 function Resume() {
 
@@ -28,7 +34,7 @@ function Resume() {
                     <Button
                         className="project-buttons"
                         variant="primary"
-                        href={alignment === 'dark' ? dark_pdf : light_pdf}
+                        href={alignment === 'dark' ? darkResumeLink : lightResumeLink}
                         target="_blank"
                         style={{ maxWidth: "200px",  marginRight:"20px" }}
                     >
@@ -52,11 +58,12 @@ function Resume() {
                 <Container style={{height:"100%"}}>
                     <iframe 
                         title="resume" 
-                        src={alignment === 'dark' ? dark_pdf : light_pdf} 
+                        src={alignment === 'dark' ? darkResumeLink : lightResumeLink} 
                         width="100%" 
                         height="100%" 
                     />
                 </Container>
+                
             </Col>
         </Container>
     );
