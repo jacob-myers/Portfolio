@@ -35,7 +35,6 @@ function Resume() {
                         className="project-buttons"
                         variant="primary"
                         href={alignment === 'dark' ? darkResumeDownloadLink : lightResumeDownloadLink}
-                        //target="_blank"
                         style={{ maxWidth: "200px",  marginRight:"20px" }}
                     >
                         <IoMdDownload size={18} />
