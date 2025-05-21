@@ -48,7 +48,7 @@ function About() {
                 <Row
                     style={{justifyContent:"center", paddingTop:"30px", paddingBottom:"30px"}}
                 >
-                    <h1 className="project-header text-classic">Contributions</h1>
+                    <h1 className="project-header text-classic">GitHub Contributions</h1>
                     <GitHubCalendar 
                         blockSize={14}
                         blockMargin={4}
